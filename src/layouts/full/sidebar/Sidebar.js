@@ -1,5 +1,4 @@
 import { useMediaQuery, Box, Drawer } from '@mui/material';
-import Logo from '../shared/logo/Logo';
 import SidebarItems from './SidebarItems';
 
 
@@ -17,9 +16,6 @@ const Sidebar = (props) => {
           flexShrink: 0,
         }}
       >
-        {/* ------------------------------------------- */}
-        {/* Sidebar for desktop */}
-        {/* ------------------------------------------- */}
         <Drawer
           anchor="left"
           open={props.isSidebarOpen}
@@ -31,9 +27,6 @@ const Sidebar = (props) => {
             },
           }}
         >
-          {/* ------------------------------------------- */}
-          {/* Sidebar Box */}
-          {/* ------------------------------------------- */}
           <Box
             sx={{
               height: '100%',
@@ -62,15 +55,6 @@ const Sidebar = (props) => {
         },
       }}
     >
-      {/* ------------------------------------------- */}
-      {/* Logo */}
-      {/* ------------------------------------------- */}
-      <Box px={2}>
-        <Logo />
-      </Box>
-      {/* ------------------------------------------- */}
-      {/* Sidebar For Mobile */}
-      {/* ------------------------------------------- */}
       <SidebarItems />
     </Drawer>
   );
