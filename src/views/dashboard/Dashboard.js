@@ -12,7 +12,7 @@ export const Dashboard = () => {
   const [query, setQuery] = useState('');
 
   useEffect(() => {
-    // getAllOrders();
+    getAllOrders();
   }, []);
 
   const getAllOrders = async () => {

@@ -13,7 +13,7 @@ export const OrderDetails = () => {
   let { idOrder } = useParams();
 
   useEffect(() => {
-    //getOrderById();
+    getOrderById();
   }, []);
 
   const getOrderById = async () => {
